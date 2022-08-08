@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../../style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    html,
+    body {
+      overflow: hidden;
+    }
+  </style>
+  <body>
+    <form id="form-hosting" autocomplete="off">
+      <ol class="fs-fields text-3xl w-screen text-offWhite">
+        <!-- question1 -->
+        <li class="relative" id="type-of-places">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">1/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('description-of-places').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q1"
+            >What kind of place will you host?</label
+          >
+          <div
+            class="overflow-y-auto flex justify-evenly w-full z-10 px-20 mt-10 flex-wrap text-black"
+          >
+            <div class="rounded-2xl border-2 border-black shadow-xl form-ip">
+              <input
+                type="radio"
+                name="type-of-places"
+                value="Flat"
+                id="Flat"
+              />
+              <label for="Flat">
+                Flat
+                <img
+                  alt="property"
+                  src="https://a0.muscache.com/im/pictures/eadbcbdb-d57d-44d9-9a76-665a7a4d1cd7.jpg?im_w=240"
+                />
+              </label>
+            </div>
+            <div class="rounded-2xl border-2 border-black shadow-xl form-ip">
+              <input
+                type="radio"
+                name="type-of-places"
+                value="House"
+                id="House"
+              />
+              <label for="House">
+                House
+                <img
+                  alt="property"
+                  src="https://a0.muscache.com/im/pictures/eadbcbdb-d57d-44d9-9a76-665a7a4d1cd7.jpg?im_w=240"
+                />
+              </label>
+            </div>
+            <div class="rounded-2xl border-2 border-black shadow-xl form-ip">
+              <input
+                type="radio"
+                name="type-of-places"
+                value="Villa"
+                id="Villa"
+              />
+              <label for="Villa">
+                Villa
+                <img
+                  alt="property"
+                  src="https://a0.muscache.com/im/pictures/eadbcbdb-d57d-44d9-9a76-665a7a4d1cd7.jpg?im_w=240"
+                />
+              </label>
+            </div>
+            <div class="rounded-2xl border-2 border-black shadow-xl form-ip">
+              <input
+                type="radio"
+                name="type-of-places"
+                value="Bed and Breakfast"
+                id="Bed and Breakfast"
+              />
+              <label for="Bed and Breakfast">
+                Bed and Breakfast
+                <img
+                  alt="property"
+                  src="https://a0.muscache.com/im/pictures/eadbcbdb-d57d-44d9-9a76-665a7a4d1cd7.jpg?im_w=240"
+                />
+              </label>
+            </div>
+          </div>
+        </li>
+        <!-- question2 -->
+        <li class="relative" id="description-of-places">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">2/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('type-of-space').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q1"
+            >Which of these best describes your place?</label
+          >
+          <div
+            class="overflow-y-auto flex justify-evenly w-full z-10 px-20 mt-10 flex-wrap text-black"
+          >
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-description"
+            >
+              <input
+                type="radio"
+                name="description-of-place"
+                value="Flat-description"
+                id="Flat-description"
+              />
+              <label for="Flat-description">
+                Flat
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quasi harum rerum amet minima! Quod harum dolor ipsa natus
+                  nemo magnam, molestias provident facilis nesciunt unde
+                  similique hic impedit quam quasi?
+                </p>
+              </label>
+            </div>
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-description"
+            >
+              <input
+                type="radio"
+                name="description-of-place"
+                value="House-description"
+                id="House-description"
+              />
+              <label for="House-description">
+                House
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quasi harum rerum amet minima! Quod harum dolor ipsa natus
+                  nemo magnam, molestias provident facilis nesciunt unde
+                  similique hic impedit quam quasi?
+                </p>
+              </label>
+            </div>
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-description"
+            >
+              <input
+                type="radio"
+                name="description-of-place"
+                value="Villa-description"
+                id="Villa-description"
+              />
+              <label for="Villa-description">
+                Villa
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quasi harum rerum amet minima! Quod harum dolor ipsa natus
+                  nemo magnam, molestias provident facilis nesciunt unde
+                  similique hic impedit quam quasi?
+                </p>
+              </label>
+            </div>
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-description"
+            >
+              <input
+                type="radio"
+                name="description-of-place"
+                value="Bed and Breakfast-description"
+                id="Bed and Breakfast-description"
+              />
+              <label for="Bed and Breakfast-description">
+                Bed and Breakfast
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quasi harum rerum amet minima! Quod harum dolor ipsa natus
+                  nemo magnam, molestias provident facilis nesciunt unde
+                  similique hic impedit quam quasi?
+                </p>
+              </label>
+            </div>
+          </div>
+        </li>
+        <!-- question3 -->
+        <li class="relative" id="type-of-space">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">3/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('guest-space').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q1"
+            >What kind of space will guests have?</label
+          >
+          <div
+            class="overflow-y-auto flex justify-evenly w-full z-10 px-20 mt-10 flex-wrap text-black"
+          >
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-space"
+            >
+              <input
+                type="radio"
+                name="type-of-space"
+                value="Entire Place"
+                id="Entire Place"
+              />
+              <label for="Entire Place"> An Entire Place </label>
+            </div>
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-space"
+            >
+              <input
+                type="radio"
+                name="type-of-space"
+                value="Private Room"
+                id="Private Room"
+              />
+              <label for="Private Room"> A Private Room </label>
+            </div>
+            <div
+              class="rounded-2xl border-2 border-black shadow-xl form-ip-space"
+            >
+              <input
+                type="radio"
+                name="type-of-space"
+                value="Shared Room"
+                id="Shared Room"
+              />
+              <label for="Shared Room"> A Shared Room </label>
+            </div>
+          </div>
+        </li>
+        <!-- question4 -->
+        <li class="relative" id="guest-space">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">4/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('place-amenities').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q1"
+            >How many guests would you like to welcome?</label
+          >
+          <div
+            class="text-offWhite overflow-y-auto flex items-center w-full z-10 px-20 mt-10 flex-col"
+          >
+            <div class="flex justify-between items-center w-2/4 mt-10">
+              <h1>Guests</h1>
+              <div
+                class="flex gap-5 justify-center items-center form-group-guests"
+              >
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  -
+                </button>
+                <input
+                  id="guest-amt"
+                  onkeypress="return onlyNumberKey(event)"
+                  placeholder="1"
+                  type="number"
+                  required
+                />
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-between items-center w-2/4 mt-10">
+              <h1>Beds</h1>
+              <div
+                class="flex gap-5 justify-center items-center form-group-guests"
+              >
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  -
+                </button>
+                <input
+                  id="guest-amt"
+                  onkeypress="return onlyNumberKey(event)"
+                  placeholder="1"
+                  type="number"
+                  required
+                />
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-between items-center w-2/4 mt-10">
+              <h1>Bedrooms</h1>
+              <div
+                class="flex gap-5 justify-center items-center form-group-guests"
+              >
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  -
+                </button>
+                <input
+                  id="guest-amt"
+                  onkeypress="return onlyNumberKey(event)"
+                  placeholder="1"
+                  type="number"
+                  required
+                />
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-between items-center w-2/4 mt-10">
+              <h1>Bathrooms</h1>
+              <div
+                class="flex gap-5 justify-center items-center form-group-guests"
+              >
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  -
+                </button>
+                <input
+                  id="guest-amt"
+                  onkeypress="return onlyNumberKey(event)"
+                  placeholder="1"
+                  type="number"
+                  required
+                />
+                <button
+                  type="button"
+                  class="h-8 w-8 text-2xl font-semibold border border-black shadow-xl rounded-full flex justify-center items-center bg-offWhite text-black"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- question5 -->
+        <li class="relative" id="place-amenities">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">5/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('standout-amenities').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q5"
+            >Let guests know what your place has to offer</label
+          >
+          <div
+            class="flex flex-wrap overflow-y-auto justify-between px-20 py-10 z-10 w-3/4 gap-x-5"
+          >
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input type="checkbox" id="Wifi" name="Wifi" value="Wifi" />
+              <label for="Wifi"> Wifi</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Kitchen"
+                name="Kitchen"
+                value="Kitchen"
+              />
+              <label for="Kitchen"> Kitchen</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input type="checkbox" id="TV" name="TV" value="TV" />
+              <label for="TV"> TV</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Washing Machine"
+                name="Washing Machine"
+                value="Washing Machine"
+              />
+              <label for="Washing Machine"> Washing Machine</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Free Parking"
+                name="Free Parking"
+                value="Free Parking"
+              />
+              <label for="Free Parking"> Free Parking</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Air Conditioning"
+                name="Air Conditioning"
+                value="Air Conditioning"
+              />
+              <label for="Air Conditioning"> Air Conditioning</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Smoke Alarm"
+                name="Smoke Alarm"
+                value="Smoke Alarm"
+              />
+              <label for="Smoke Alarm"> Smoke Alarm</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="First Aid Kit"
+                name="First Aid Kit"
+                value="First Aid Kit"
+              />
+              <label for="First Aid Kit"> First Aid Kit</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="CO Alarm"
+                name="CO Alarm"
+                value="CO Alarm"
+              />
+              <label for="CO Alarm"> Carbon Monoxide Alarm</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Fire Extinguisher"
+                name="Fire Extinguisher"
+                value="Fire Extinguisher"
+              />
+              <label for="Fire Extinguisher">Fire Extinguisher</label>
+            </div>
+          </div>
+        </li>
+        <!-- question 6 -->
+        <li class="relative" id="standout-amenities">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">6/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('property-name').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q5"
+            >Do you have any standout amenities?</label
+          >
+          <div
+            class="flex flex-wrap overflow-y-auto justify-between px-20 py-10 z-10 w-3/4 gap-x-5"
+          >
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input type="checkbox" id="Pool" name="Pool" value="Pool" />
+              <label for="Pool"> Pool</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Hot Tub"
+                name="Hot Tub"
+                value="Hot Tub"
+              />
+              <label for="Hot Tub"> Hot Tub</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input type="checkbox" id="Patio" name="Patio" value="Patio" />
+              <label for="Patio"> Patio</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="BBQ Grill"
+                name="BBQ Grill"
+                value="BBQ Grill"
+              />
+              <label for="BBQ Grill"> BBQ Grill</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Fire Pit"
+                name="Fire Pit"
+                value="Fire Pit"
+              />
+              <label for="Fire Pit"> Fire Pit</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Pool Table"
+                name="Pool Table"
+                value="Pool Table"
+              />
+              <label for="Pool Table"> Pool Table</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Indoor Fireplace"
+                name="Indoor Fireplace"
+                value="Indoor Fireplace"
+              />
+              <label for="Indoor Fireplace"> Indoor Fireplace</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Outdoor Dining Area"
+                name="Outdoor Dining Area"
+                value="Outdoor Dining Area"
+              />
+              <label for="Outdoor Dining Area"> Outdoor Dining Area</label>
+            </div>
+            <div
+              class="am-group shadow-xl text-center text-black rounded-2xl border border-black"
+            >
+              <input
+                type="checkbox"
+                id="Exercise Equipment"
+                name="Exercise Equipment"
+                value="Exercise Equipment"
+              />
+              <label for="Exercise Equipment">Exercise Equipment</label>
+            </div>
+          </div>
+        </li>
+        <!-- question 7 -->
+        <li class="relative" id="property-name">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">7/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('property-description').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q5"
+            >Let's give your place a name</label
+          >
+          <div class="flex flex-wrap px-20 py-10 z-10 w-3/4 gap-x-5">
+            <input
+              type="text"
+              class="w-full text-4xl"
+              id="name-of-property"
+              onkeydown="wordCount()"
+              required
+              placeholder="Create your title"
+            />
+          </div>
+        </li>
+        <!-- question 8 -->
+        <li class="relative" id="property-description">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">8/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('property-price').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q5"
+            >Let's describe your place</label
+          >
+          <div class="flex flex-wrap px-20 py-10 z-10 w-3/4 gap-x-5">
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              placeholder="Create a description for your property"
+              rows="5"
+              class="w-full border-2 rounded-xl p-5 border-black"
+            ></textarea>
+          </div>
+        </li>
+        <!-- question 9 -->
+        <li class="relative" id="property-price">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">9/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('review-listing').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <label class="fs-field-label text-5xl font-[600] z-10" for="q5"
+            >Now for the fun part - set your price !</label
+          >
+          <div
+            class="flex flex-wrap px-20 justify-center items-center py-20 z-10 w-3/4 gap-x-10"
+          >
+            <button
+              type="button"
+              class="h-12 w-12 text-3xl font-semibold border-2 border-offWhite shadow-xl rounded-full flex justify-center items-center text-offWhite"
+            >
+              -
+            </button>
+            <input
+              id="price-input"
+              onkeypress="return onlyNumberKey(event)"
+              placeholder="Rs. 1000"
+              type="number"
+              required
+            />
+            <button
+              type="button"
+              class="h-12 w-12 text-3xl font-semibold border-2 border-offWhite shadow-xl rounded-full flex justify-center items-center text-offWhite"
+            >
+              +
+            </button>
+          </div>
+        </li>
+        <!-- Review Listing -->
+        <li class="relative" id="review-listing">
+          <div class="absolute top-0 left-0 w-full h-screen z-1">
+            <div
+              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+            >
+              <h1 class="text-2xl text-offWhite font-semibold">9/10</h1>
+              <div class="flex flex-col items-center gap-3">
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-white rounded-full"></div>
+              </div>
+              <button
+                type="button"
+                onClick="document.getElementById('property-price').scrollIntoView({ behavior: 'smooth' });"
+                class="next-btn"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-wrap px-20 justify-center h-full items-center py-10 z-10 w-3/4 gap-x-10"
+          >
+            <div
+              class="bg-offWhite2 overflow-hidden w-2/4 h-full rounded-xl shadow-xl p-6 relative"
+            >
+              <div
+                class="border-2 text-black border-offGray rounded-xl bg-offWhite w-full h-full overflow-y-auto p-2"
+              >
+                <div
+                  class="w-full h-64 border-b-2 pb-1 border-offGray rounded-t-xl"
+                >
+                  <img
+                    alt="property image"
+                    class="w-full h-full object-cover rounded-t-xl"
+                    src="https://vivante-demo.vercel.app/product3.png"
+                  />
+                </div>
+                <div class="py-4 px-4">
+                  <div class="flex font-bold pb-2 items-center justify-between">
+                    <h1>Title</h1>
+                    <h1 class="text-2xl font-semibold">Price</h1>
+                  </div>
+                  <h2
+                    class="text-2xl font-semibold pb-5 border-b border-greyTone2"
+                  >
+                    Location
+                  </h2>
+                  <h2 class="text-xl font-semibold pt-5 pb-3">Description</h2>
+                  <p class="text-base text-justify pb-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Modi sequi, harum molestiae soluta fuga nostrum doloribus,
+                    facere nesciunt non ut eligendi eos velit at, reiciendis
+                    placeat suscipit. Ducimus, dolorum animi!
+                  </p>
+                  <h2 class="text-xl font-semibold">Amenities</h2>
+
+                  <ol id="amenities">
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                    <li>five</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </form>
+    <script src="../../script.js" async defer></script>
+  </body>
+</html>

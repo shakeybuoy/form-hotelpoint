@@ -13,13 +13,27 @@
     }
   </style>
   <body>
+    <div
+      class="h-screen w-full bg-black relative flex flex-col gap-10 items-center justify-center"
+    >
+      <h1 class="text-5xl text-offWhite font-semibold">
+        We are with you on your Hosting journey!
+      </h1>
+      <button
+        type="button"
+        onClick="document.getElementById('form-hosting').scrollIntoView({ behavior: 'smooth' });"
+        class="btn-booking px-7 py-3 text-2xl text-offWhite rounded-xl shadow-xl hover:scale-110 duration-200"
+      >
+        Let's get started
+      </button>
+    </div>
     <form id="form-hosting" autocomplete="off">
       <ol class="fs-fields text-3xl w-screen text-offWhite">
         <!-- question1 -->
         <li class="relative" id="type-of-places">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">1/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -43,6 +57,16 @@
               </button>
             </div>
           </div>
+
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+
           <label class="fs-field-label text-5xl font-[600] z-10" for="q1"
             >What kind of place will you host?</label
           >
@@ -113,9 +137,9 @@
         </li>
         <!-- question2 -->
         <li class="relative" id="description-of-places">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">2/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -137,6 +161,14 @@
               >
                 Next
               </button>
+            </div>
+          </div>
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
             </div>
           </div>
           <label class="fs-field-label text-5xl font-[600] z-10" for="q1"
@@ -225,9 +257,17 @@
         </li>
         <!-- question3 -->
         <li class="relative" id="type-of-space">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">3/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -294,9 +334,17 @@
         </li>
         <!-- question4 -->
         <li class="relative" id="guest-space">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">4/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -434,9 +482,17 @@
         </li>
         <!-- question5 -->
         <li class="relative" id="place-amenities">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">5/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -570,9 +626,17 @@
         </li>
         <!-- question 6 -->
         <li class="relative" id="standout-amenities">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">6/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -695,9 +759,17 @@
         </li>
         <!-- question 7 -->
         <li class="relative" id="property-name">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">7/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -737,9 +809,17 @@
         </li>
         <!-- question 8 -->
         <li class="relative" id="property-description">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">8/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -779,9 +859,17 @@
         </li>
         <!-- question 9 -->
         <li class="relative" id="property-price">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
               <h1 class="text-2xl text-offWhite font-semibold">9/10</h1>
               <div class="flex flex-col items-center gap-3">
@@ -834,11 +922,19 @@
         </li>
         <!-- Review Listing -->
         <li class="relative" id="review-listing">
-          <div class="absolute top-0 left-0 w-full h-screen z-1">
+          <div class="absolute top-0 left-0 h-screen">
+            <div class="mx-10 flex flex-col justify-between h-full py-20">
+              <a href="/hosting">
+                <img src="../../images/VivanteLogo.png" alt="VivanteLogo" />
+              </a>
+              <button type="button" class="back-btn">Back</button>
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 h-screen z-1">
             <div
-              class="float-right h-screen items-center mx-10 py-20 flex flex-col justify-between"
+              class="h-screen items-center mx-10 py-20 flex flex-col justify-between"
             >
-              <h1 class="text-2xl text-offWhite font-semibold">9/10</h1>
+              <h1 class="text-2xl text-offWhite font-semibold">10/10</h1>
               <div class="flex flex-col items-center gap-3">
                 <div class="h-3 w-3 bg-black rounded-full"></div>
                 <div class="h-3 w-3 bg-black rounded-full"></div>
@@ -848,15 +944,14 @@
                 <div class="h-3 w-3 bg-black rounded-full"></div>
                 <div class="h-3 w-3 bg-black rounded-full"></div>
                 <div class="h-3 w-3 bg-black rounded-full"></div>
-                <div class="h-3 w-3 bg-white rounded-full"></div>
-                <div class="h-3 w-3 bg-white rounded-full"></div>
+                <div class="h-3 w-3 bg-black rounded-full"></div>
               </div>
               <button
                 type="button"
                 onClick="document.getElementById('property-price').scrollIntoView({ behavior: 'smooth' });"
                 class="next-btn"
               >
-                Next
+                Save !
               </button>
             </div>
           </div>

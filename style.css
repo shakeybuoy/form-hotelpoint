@@ -68,76 +68,9 @@ input[type="number"] {
   fill: white;
 }
 .btn-booking {
-  background: linear-gradient(180deg, #3371e9 0%, #3392e9 100%);
-}
-.fit-content {
-  height: max-content;
-}
-.swiper {
-  width: 100%;
-  height: 100%;
+  background: linear-gradient(180deg, #3371e9 0%, #3392e9 100%) !important;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.overlay {
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    transparent,
-    transparent,
-    #00000080
-  ) !important;
-}
-.swiper-button-next {
-  background-image: url("../public/next.png");
-}
-.swiper-button-prev {
-  background-image: url("../public/prev.png");
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 35px !important;
-}
-.swiper-button-disabled {
-  display: none !important;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-}
-.swiper-pagination-bullet {
-  background: #c4d1db !important;
-}
-.swiper-pagination-bullet-active {
-  background: #fff !important;
-}
 .container-ip input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
@@ -351,7 +284,18 @@ input[type="checkbox"]:checked + label {
   font-weight: 600;
   transition: all 0.2s ease-in-out;
 }
-.next-btn:hover {
+.back-btn {
+  background: #e5eff7 !important;
+  color: #212629;
+  padding: 0.3rem 1.3rem;
+  box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.next-btn:hover,
+.back-btn:hover {
   transform: scale(1.1);
 }
 #price-input {
